@@ -1,0 +1,248 @@
+{
+  "personal": {
+    "fullName": "Arina Mirzakhani",
+    "title": "Student Developer",
+    "headline": "Arina Mirzakhani \u2022 Student Developer \u2022 Computer Programming & Analysis (GBC)",
+    "summary": "Computer Programming & Analysis student at George Brown College focused on building clear, user-friendly applications. I enjoy turning requirements into working features, documenting decisions, and improving quality through testing and iteration.",
+    "bio": "I\u2019m a dependable and detail-oriented student who enjoys solving problems and learning through building. In group work, I focus on clear communication, sharing progress early, and being respectful of deadlines and teammates\u2019 time.\n\nI like environments where expectations are clear and feedback is used to improve. I\u2019m comfortable presenting my work, explaining decisions, and updating documents so others can follow along. I bring a calm, consistent approach to tasks, even when timelines are tight.\n\nOutside of class projects, I\u2019m motivated by work that has a real user in mind. I\u2019m looking for opportunities where I can support a team, keep learning, and take ownership of small-to-medium features end to end.",
+    "philosophy": "\u201cWe are the facilitators of our own creative evolution.\u201d \u2014 Bill Hicks\n\nFor me, that means treating software as a craft and a responsibility. I\u2019m motivated by work that makes people\u2019s lives easier\u2014even in small ways\u2014through clarity, reliability, and thoughtful design. I believe my role is to understand the problem, ask better questions, and deliver solutions that are maintainable and respectful of the user\u2019s time.\n\nMy past experience has taught me that progress comes from consistent effort: planning before building, testing as I go, and documenting so others can reuse and improve the work. Right now I\u2019m focused on strengthening my fundamentals and building strong project artifacts (requirements, plans, wireframes, and status updates). In the future, I want to grow into a developer who can lead parts of a project, mentor others, and help teams ship high-quality products.",
+    "email": "[add your email]",
+    "phone": "[add your phone]",
+    "location": "Toronto, Canada",
+    "careerSummary": "I am a Computer Programming & Analysis student at George Brown College preparing for junior software roles. I build projects by translating requirements into clean, working features and validating them with testing and documentation. I\u2019m comfortable collaborating in teams, using version control, and communicating progress clearly. I stay organized, learn quickly, and adapt when priorities or constraints change. My goal is to join a team where I can contribute to real products while continuing to grow my skills.",
+    "marketableSkills": [
+      "Clear written and verbal communication (status updates, demos, documentation)",
+      "Team collaboration (planning, dividing tasks, reviewing work, supporting teammates)",
+      "Time management (prioritizing tasks and meeting deadlines)",
+      "Problem-solving mindset (break down issues, test assumptions, iterate)",
+      "Attention to detail (requirements alignment, consistency, and quality checks)"
+    ],
+    "accomplishments": [
+      "Delivered multiple academic projects with full development lifecycle artifacts (requirements, design notes, implementation evidence).",
+      "Collaborated on team projects using Git-based workflows and clear task ownership.",
+      "Prepared structured demo scripts and presentations to explain technical work to non-technical audiences."
+    ]
+  },
+  "links": {
+    "portfolioUrl": "[add live link later]",
+    "videoUrl": "[add demo video link later]",
+    "expiryDate": "No expiry (available past Apr 30, 2025)",
+    "github": "[add GitHub link later]",
+    "linkedin": "[add LinkedIn link later]",
+    "coverLetterFile": "[optional file link]"
+  },
+  "academic": {
+    "transcriptNote": "Optional: you can add your transcript as a PDF or screenshot file.",
+    "transcriptFile": "[optional transcript link]",
+    "credentials": [
+      {
+        "name": "Computer Programming & Analysis (Diploma)",
+        "school": "George Brown College",
+        "date": "2025\u20132026"
+      }
+    ],
+    "awards": [
+      {
+        "name": "Dean's List (if applicable)",
+        "date": "YYYY",
+        "details": "Optional details"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "[Add certification if any]",
+        "issuer": "[Issuer]",
+        "date": "YYYY"
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "title": "Full-Stack Development",
+      "subtitle": "Node/Express \u2022 MongoDB \u2022 GraphQL"
+    },
+    {
+      "title": "Front-End UI",
+      "subtitle": "HTML \u2022 CSS \u2022 JavaScript \u2022 Responsive Design"
+    },
+    {
+      "title": "Team Projects",
+      "subtitle": "GitHub workflow \u2022 Collaboration \u2022 Documentation"
+    }
+  ],
+  "academicSamples": [
+    {
+      "type": "assignment",
+      "title": "Academic Sample #1 (Add your real project name)",
+      "description": "Replace with: what the problem was, what you built, and the result (1\u20133 sentences).",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "evidence": [
+        {
+          "label": "GitHub Repo",
+          "url": "[add link]"
+        },
+        {
+          "label": "PDF/Report",
+          "url": "[add link]"
+        }
+      ],
+      "keywords": [
+        "report",
+        "ui",
+        "testing"
+      ]
+    },
+    {
+      "type": "lab",
+      "title": "Academic Sample #2 (Add your real project name)",
+      "description": "Replace with: what the problem was, what you built, and the result (1\u20133 sentences).",
+      "tech": [
+        "Python"
+      ],
+      "evidence": [
+        {
+          "label": "Screenshots",
+          "url": "[add link]"
+        }
+      ],
+      "keywords": [
+        "analysis"
+      ]
+    },
+    {
+      "type": "report",
+      "title": "Academic Sample #3 (Add your real project name)",
+      "description": "Replace with: what the problem was, what you built, and the result (1\u20133 sentences).",
+      "tech": [
+        "Docs"
+      ],
+      "evidence": [
+        {
+          "label": "PDF",
+          "url": "[add link]"
+        }
+      ],
+      "keywords": [
+        "documentation"
+      ]
+    },
+    {
+      "type": "prototype",
+      "title": "Academic Sample #4 (Wireframes/Mockups)",
+      "description": "Wireframes or mockups (Figma/screenshots).",
+      "tech": [
+        "Figma"
+      ],
+      "evidence": [
+        {
+          "label": "Figma Link",
+          "url": "[add link]"
+        }
+      ],
+      "keywords": [
+        "wireframes",
+        "mockups"
+      ]
+    },
+    {
+      "type": "assignment",
+      "title": "Academic Sample #5 (Add your real project name)",
+      "description": "Replace with: what the problem was, what you built, and the result (1\u20133 sentences).",
+      "tech": [
+        "Node",
+        "MongoDB"
+      ],
+      "evidence": [
+        {
+          "label": "Repo",
+          "url": "[add link]"
+        }
+      ],
+      "keywords": [
+        "api",
+        "database"
+      ]
+    }
+  ],
+  "capstone": {
+    "summary": "Move-In is a peer-to-peer moving-service platform that helps customers compare vendors, book a service, and track requests in one place.",
+    "vision": "Create a simple, trusted marketplace experience for moving services with transparent options, clear pricing signals, and smooth booking.",
+    "requirements": "Core flows include browsing/compare vendors, creating a booking request, viewing booking status, and basic account management for customers and vendors.",
+    "demoLink": "[live demo link]",
+    "repoLink": "[repo link]",
+    "implementation": "Implemented key customer-side flows (dashboard, booking request, and status views) and supported documentation to track requirements, design, and progress. Linked evidence below (plan, wireframes, status reports, and implementation screenshots).",
+    "docs": [
+      {
+        "name": "Project Summary",
+        "url": "[add link]"
+      },
+      {
+        "name": "Project Vision",
+        "url": "[add link]"
+      },
+      {
+        "name": "Project/Business Requirements",
+        "url": "[add link]"
+      },
+      {
+        "name": "Project Plan",
+        "url": "[add link]"
+      },
+      {
+        "name": "Requirements Analysis & Design",
+        "url": "[add link]"
+      },
+      {
+        "name": "Wireframes/Mockups",
+        "url": "[add link]"
+      },
+      {
+        "name": "Status Reports",
+        "url": "[add link]"
+      },
+      {
+        "name": "System Implementation Evidence",
+        "url": "[add link]"
+      }
+    ]
+  },
+  "professional": {
+    "samples": [
+      {
+        "title": "Professional Sample #1",
+        "description": "Replace later",
+        "url": "[add link]"
+      },
+      {
+        "title": "Professional Sample #2",
+        "description": "Replace later",
+        "url": "[add link]"
+      }
+    ],
+    "volunteer": [
+      {
+        "name": "Volunteer/Community Service",
+        "date": "YYYY",
+        "details": "Replace later"
+      }
+    ],
+    "letters": [
+      {
+        "name": "Letter of Recommendation #1",
+        "source": "Company/Organization (not family/friends)",
+        "url": "[add link]"
+      }
+    ],
+    "awards": [
+      {
+        "name": "Award/Recognition",
+        "date": "YYYY",
+        "details": "Replace later"
+      }
+    ]
+  }
+}

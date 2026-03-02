@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Professional portfolio with resume, cover letter template, academic work samples, and capstone documentation." />
+  <title>Portfolio | Arina Mirzakhani</title>
+
+  <link rel="icon" href="./assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- ✅ Downloads section layout fix (safe even if you don’t edit styles.css) -->
+  <style>
+    .downloads-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .downloads-grid--center {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .download-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 180px;
+    }
+    .download-card h3 { margin-bottom: 8px; }
+    .download-card .muted { margin-bottom: 16px; }
+    .download-card .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+    @media (max-width: 520px) {
+      .download-card .actions .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <img class="brand-logo" src="./assets/logo.png" alt="Arina Mirzakhani Programmer Logo" />
+        <div class="brand-text">
+          <span class="brand-name" data-bind="personal.fullName">Arina Mirzakhani</span>
+          <span class="brand-tagline" data-bind="personal.title">Student Developer</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="#credentials">Academic Credentials</a></li>
+          <li><a href="#academic-work">Academic Work</a></li>
+          <li><a href="#capstone">Capstone</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Hero -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="kicker">Portfolio</p>
+
+        <img src="./assets/logo.png" alt="Arina Mirzakhani Programmer Logo" class="hero-logo" />
+
+        <h1 class="hero-title" data-bind="personal.headline">Arina Mirzakhani — Student Developer</h1>
+
+        <p class="hero-subtitle" data-bind="personal.summary">
+          Short 2–3 line overview. Replace later with your real summary.
+        </p>
+
+        <div class="pill-row" id="pillRow" aria-label="Highlights"></div>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#downloads">View Resume</a>
+          <a class="btn ghost" href="#academic-work">See Work Samples</a>
+        </div>
+
+        <!-- ✅ If you also don’t want these chips at the top, delete this whole meta-row block -->
+        <div class="meta-row">
+          <span class="meta-chip" id="portfolioLinkChip">Portfolio Link: <span data-bind="links.portfolioUrl">[add later]</span></span>
+          <span class="meta-chip" id="videoLinkChip">Demo Video: <span data-bind="links.videoUrl">[add later]</span></span>
+          <span class="meta-chip" id="expiryChip">Link Expiry: <span data-bind="links.expiryDate">[add later]</span></span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <figure class="portrait-card">
+          <img class="portrait" src="./assets/arina.jpg" alt="Arina Mirzakhani" />
+          <figcaption class="portrait-caption">
+            <strong data-bind="personal.fullName">Arina Mirzakhani</strong><br />
+            <span data-bind="personal.location">Toronto, Canada</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- PERSONAL DATA -->
+    <section id="personal" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Personal Data</h2>
+          <p class="section-desc">Career summary, short biography, resume, cover letter template, and philosophy/career goal statement.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Career Summary</h3>
+            <p class="muted" data-bind="personal.careerSummary">
+              Add a minimum 1 paragraph (about 5 sentences) career summary.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Short Biography</h3>
+            <p class="muted" data-bind="personal.bio">
+              Write your biography here (2–3 short paragraphs). Focus on strengths and soft skills.
+            </p>
+
+            <dl class="info-list">
+              <div><dt>Email</dt><dd data-bind="personal.email">arinamirzakhani02@gmail.com</dd></div>
+              <div><dt>Phone</dt><dd data-bind="personal.phone">(647) 809-6126</dd></div>
+              <div>
+                <dt>LinkedIn</dt>
+                <dd>
+                  <a href="https://www.linkedin.com/in/ArinaMirzakhani" data-bind-href="links.linkedin" target="_blank" rel="noopener">
+                    ArinaMirzakhani
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd>
+                  <a href="https://github.com/arinamirzakhani" data-bind-href="links.github" target="_blank" rel="noopener">
+                    arinamirzakhani
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="card">
+            <h3>Philosophy / Statement of Career Goal</h3>
+            <p class="muted">
+              <em>“We are the facilitators of our own creative evolution.” — Bill Hicks</em>
+            </p>
+
+            <p class="muted" data-bind="personal.philosophy">
+              Add 1–2 paragraphs describing motivations, beliefs about your role, lessons learned from past experience,
+              current state, and future ambitions.
+            </p>
+          </article>
+        </div>
+
+        <div class="grid-2 mt">
+          <article class="card">
+            <h3>Resume</h3>
+            <p class="muted">Attach a PDF and/or show key sections. This page works offline too.</p>
+
+            <div class="actions">
+              <a class="btn small" href="./assets/arina_resume.pdf" download>Download Resume PDF</a>
+              <a class="btn small ghost" href="./assets/arina_resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+              <button class="btn small ghost" type="button" id="printResumeBtn">Print Page</button>
+            </div>
+
+            <div class="embed">
+              <object data="./assets/arina_resume.pdf" type="application/pdf" width="100%" height="600">
+                <p class="muted">
+                  Your browser can’t display this PDF here.
+                  <a href="./assets/arina_resume.pdf" target="_blank" rel="noopener">Open the PDF</a>
+                  or
+                  <a href="./assets/arina_resume.pdf" download>download it</a>.
+                </p>
+              </object>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Cover Letter Template</h3>
+            <p class="muted">A reusable template for the position you’re best fit for.</p>
+
+            <div class="cover-letter-tools">
+              <label class="field">
+                <span>Target Role</span>
+                <input id="clRole" type="text" placeholder="e.g., Junior Developer" />
+              </label>
+              <label class="field">
+                <span>Company</span>
+                <input id="clCompany" type="text" placeholder="e.g., Example Inc." />
+              </label>
+              <label class="field">
+                <span>Hiring Manager</span>
+                <input id="clManager" type="text" placeholder="e.g., Ms. Smith" />
+              </label>
+              <button class="btn small primary" type="button" id="generateCLBtn">Generate</button>
+              <button class="btn small ghost" type="button" id="copyCLBtn">Copy</button>
+            </div>
+
+            <textarea id="coverLetterOutput" class="textarea" rows="14" aria-label="Cover letter output">[Click Generate to fill a professional template. Replace text later.]</textarea>
+          </article>
+        </div>
+
+        <div class="grid-2 mt">
+          <article class="card">
+            <h3>Marketable Skills & Abilities</h3>
+            <p class="muted">A reworded, marketable version of your strengths (use for resumes and interviews).</p>
+            <ul id="marketableSkillsList" class="list"></ul>
+          </article>
+
+          <article class="card">
+            <h3>Professional Accomplishments</h3>
+            <p class="muted">Achievement-focused statements you can reuse for different job postings.</p>
+            <ul id="accomplishmentsList" class="list"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC CREDENTIALS -->
+    <section id="credentials" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Academic Credentials</h2>
+          <p class="section-desc">Certificates/degrees and academic awards.</p>
+        </header>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Certificates / Degrees</h3>
+            <ul id="credentialsList" class="list"></ul>
+
+            <h3 class="mt">Academic Awards</h3>
+            <ul id="awardsAcademicList" class="list"></ul>
+          </article>
+
+          <article class="card">
+            <h3>Academic Record / Transcript</h3>
+            <p class="muted">View my academic transcript below.</p>
+
+            <div class="actions">
+              <a class="btn small ghost" href="./assets/Transcript.pdf" data-bind-href="academic.transcriptFile" target="_blank" rel="noopener">
+                Open Transcript
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC WORK SAMPLES -->
+    <section id="academic-work" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Academic Work Samples</h2>
+          <p class="section-desc">Minimum 5 samples. Add evidence links (repo, PDF, screenshots, demo).</p>
+        </header>
+
+        <div class="tools">
+          <label class="field">
+            <span>Search</span>
+            <input id="workSearch" type="text" placeholder="Search title, tech, keywords..." />
+          </label>
+
+          <label class="field">
+            <span>Filter</span>
+            <select id="workFilter">
+              <option value="all">All</option>
+              <option value="assignment">Assignment</option>
+              <option value="lab">Lab</option>
+              <option value="report">Report</option>
+              <option value="prototype">Prototype</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="academicSamplesGrid" class="grid-3"></div>
+      </div>
+    </section>
+
+    <!-- CAPSTONE -->
+    <section id="capstone" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Capstone Project</h2>
+          <p class="section-desc">Summary, vision, requirements, plan, design, wireframes, status reports, implementation.</p>
+        </header>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Project Summary</h3>
+            <p class="muted" data-bind="capstone.summary"></p>
+
+            <h3 class="mt">Project Vision</h3>
+            <p class="muted" data-bind="capstone.vision"></p>
+
+            <h3 class="mt">Project / Business Requirements</h3>
+            <p class="muted" data-bind="capstone.requirements"></p>
+
+            <div class="actions mt">
+              <a class="btn small primary" href="#" data-bind-href="capstone.repoLink" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>System Implementation</h3>
+            <p class="muted" data-bind="capstone.implementation"></p>
+
+            <h3 class="mt">Capstone Documents</h3>
+            <ul id="capstoneDocsList" class="list"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ DOWNLOADS (IMPROVED LAYOUT) -->
+    <section id="downloads" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Downloads</h2>
+          <p class="section-desc">Quick access to key files and links.</p>
+        </header>
+
+        <div class="downloads-grid downloads-grid--center">
+          <article class="card download-card">
+            <h3>Resume</h3>
+            <p class="muted">Download or open the resume PDF.</p>
+            <div class="actions">
+              <a class="btn small primary" href="./assets/arina_resume.pdf" download>Download Resume</a>
+              <a class="btn small ghost" href="./assets/arina_resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+              <a class="btn small ghost" href="#personal">Go to Resume Section</a>
+            </div>
+          </article>
+
+          <!-- ✅ UPDATED: removed the text lines you didn’t want -->
+          <article class="card download-card">
+            <h3>Portfolio & Demo</h3>
+            <p class="muted">Open my live portfolio and demo video.</p>
+            <div class="actions">
+              <a class="btn small primary" href="#" data-bind-href="links.portfolioUrl" target="_blank" rel="noopener">Open Portfolio</a>
+              <a class="btn small ghost" href="#" data-bind-href="links.videoUrl" target="_blank" rel="noopener">Open Demo Video</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <dialog id="modal" class="modal">
+    <div class="modal-box">
+      <div class="modal-top">
+        <button class="btn small ghost" type="button" id="modalCloseBtn">Close</button>
+      </div>
+      <div id="modalContent" class="modal-content"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="tiny">© <span id="year"></span> <span data-bind="personal.fullName">Arina Mirzakhani</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Inline JSON (offline safe) -->
+  <script id="contentData" type="application/json">
+  {
+    "personal": {
+      "fullName": "Arina Mirzakhani",
+      "title": "Student Developer",
+      "headline": "Arina Mirzakhani • Student Developer • Computer Programming & Analysis (GBC)",
+      "summary": "Computer Programming & Analysis student at George Brown College focused on building clear, user-friendly applications. I enjoy turning requirements into working features, documenting decisions, and improving quality through testing and iteration.",
+      "bio": "I’m a dependable and detail-oriented student who enjoys solving problems and learning through building. In group work, I focus on clear communication, sharing progress early, and being respectful of deadlines and teammates’ time.\n\nI like environments where expectations are clear and feedback is used to improve. I’m comfortable presenting my work, explaining decisions, and updating documents so others can follow along. I bring a calm, consistent approach to tasks, even when timelines are tight.\n\nOutside of class projects, I’m motivated by work that has a real user in mind. I’m looking for opportunities where I can support a team, keep learning, and take ownership of small-to-medium features end to end.",
+      "philosophy": "For me, that means treating software as a craft and a responsibility. I’m motivated by work that makes people’s lives easier—even in small ways—through clarity, reliability, and thoughtful design. I believe my role is to understand the problem, ask better questions, and deliver solutions that are maintainable and respectful of the user’s time.\n\nMy past experience has taught me that progress comes from consistent effort: planning before building, testing as I go, and documenting so others can reuse and improve the work. Right now I’m focused on strengthening my fundamentals and building strong project artifacts (requirements, plans, wireframes, and status updates). In the future, I want to grow into a developer who can lead parts of a project, mentor others, and help teams ship high-quality products.",
+      "email": "arinamirzakhani02@gmail.com",
+      "phone": "(647) 809-6126",
+      "location": "Toronto, Canada",
+      "careerSummary": "I am a Computer Programming & Analysis student at George Brown College preparing for junior software roles. I build projects by translating requirements into clean, working features and validating them with testing and documentation. I’m comfortable collaborating in teams, using version control, and communicating progress clearly. I stay organized, learn quickly, and adapt when priorities or constraints change. My goal is to join a team where I can contribute to real products while continuing to grow my skills.",
+      "marketableSkills": [
+        "Clear written and verbal communication (status updates, demos, documentation)",
+        "Team collaboration (planning, dividing tasks, reviewing work, supporting teammates)",
+        "Time management (prioritizing tasks and meeting deadlines)",
+        "Problem-solving mindset (break down issues, test assumptions, iterate)",
+        "Attention to detail (requirements alignment, consistency, and quality checks)"
+      ],
+      "accomplishments": [
+        "Delivered multiple academic projects with full development lifecycle artifacts (requirements, design notes, implementation evidence).",
+        "Collaborated on team projects using Git-based workflows and clear task ownership.",
+        "Prepared structured demo scripts and presentations to explain technical work to non-technical audiences."
+      ]
+    },
+    "links": {
+      "portfolioUrl": "[add live link later]",
+      "videoUrl": "[add demo video link later]",
+      "expiryDate": "No expiry (available past Apr 30, 2025)",
+      "github": "https://github.com/arinamirzakhani",
+      "linkedin": "https://www.linkedin.com/in/ArinaMirzakhani"
+    },
+    "academic": {
+      "transcriptNote": "View my academic transcript below.",
+      "transcriptFile": "./assets/Transcript.pdf",
+      "credentials": [
+        { "name": "Computer Programming & Analysis (Diploma)", "school": "George Brown College", "date": "2023–2026" }
+      ],
+      "awards": [
+        { "name": "Dean's List", "date": "Fall 2023", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Winter 2024", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Fall 2024", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Winter 2025", "details": "George Brown College — Dean’s Honour List" }
+      ]
+    },
+    "highlights": [
+      { "title": "Full-Stack Development", "subtitle": "Node/Express • MongoDB • GraphQL" },
+      { "title": "Front-End UI", "subtitle": "HTML • CSS • JavaScript • Responsive Design" },
+      { "title": "Team Projects", "subtitle": "GitHub workflow • Collaboration • Documentation" }
+    ],
+    "academicSamples": [],
+    "capstone": {
+      "summary": "Move-In is a peer-to-peer moving-service platform that helps customers compare vendors, book a service, and track requests in one place.",
+      "vision": "Create a simple, trusted marketplace experience for moving services with transparent options, clear pricing signals, and smooth booking.",
+      "requirements": "Core flows include browsing/compare vendors, creating a booking request, viewing booking status, and basic account management for customers and vendors.",
+      "repoLink": "https://github.com/imlakshayd/Move-In.git",
+      "implementation": "Designed a relational schema using PostgreSQL and migrated early to Supabase to avoid environment inconsistencies, migration conflicts, and data synchronization issues. Implemented role-based data modeling with a base users table extended by role-specific one-to-one tables (linked using user_id). Built separate APIs for vendors, vehicle owners, managers, and support staff to keep role management scalable and onboarding flexible. Evidence includes UI screenshots of key flows (sign up/sign in, listings, details, booking, compare) plus backend code and database schema screenshots, documented in the System Implementation Evidence PDF.",
+      "docs": [
+        { "name": "Project Summary", "url": "./assets/capstone/F24-T1_Project_Summary.docx" },
+        { "name": "Project Vision", "url": "./assets/capstone/F24_T1_Project_Vision.docx" },
+        { "name": "Project/Business Requirements", "url": "./assets/capstone/F24_T1_High_Level_ProjectRequirements.docx" },
+        { "name": "Project Plan", "url": "./assets/capstone/W25_T1_Project_Plan_v2.0.docx" },
+        { "name": "Requirements Analysis & Design", "url": "./assets/capstone/COMP3059-F24-Requirements Analysis and Design template.docx" },
+        { "name": "Wireframes/Mockups", "url": "./assets/capstone/Figma Mockup.pdf" },
+        { "name": "Status Reports", "url": "./assets/capstone/W25_COMP_3078_Project_Status_Report_1_Template.docx" },
+        { "name": "System Implementation Evidence", "url": "./assets/capstone/System_Implementation_Evidence_with_images.pdf" }
+      ]
+    }
+  }
+  </script>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
