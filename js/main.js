@@ -235,27 +235,6 @@
     (samples || []).forEach((s) => grid.appendChild(sampleCard(s, false)));
   }
 
-  function renderProfessionalSamples(samples) {
-    const grid = $("#professionalSamplesGrid");
-    if (!grid) return;
-
-    grid.innerHTML = "";
-    (samples || []).slice(0, 3).forEach((s) => {
-      const card = elTag("div", "card sample");
-      const ok = safeLink(s.url);
-      const href = ok ? s.url : "#";
-      const target = ok ? ` target="_blank" rel="noopener noreferrer"` : "";
-      card.innerHTML = `
-        <div class="title">${s.title ?? "Professional Sample"}</div>
-        <p class="desc">${s.description ?? ""}</p>
-        <div class="links">
-          <a class="btn small ghost" href="${href}"${target}>Open</a>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-  }
-
   // -----------------------------
   // COVER LETTER
   // -----------------------------
@@ -314,7 +293,6 @@ ${name}
     throw new Error("Failed to load portfolio content (inline JSON or content.json).");
   }
 
-
   function bindAll(data) {
     console.log("✅ content.json loaded", data);
 
@@ -324,7 +302,7 @@ ${name}
     setTextBind("personal.fullName", fullName);
     setTextBind("personal.title", title);
     setTextBind("personal.headline", data.personal?.headline);
-    setTextBind("personal.summary", data.personal?.summary); // ✅ THIS IS YOUR SUMMARY
+    setTextBind("personal.summary", data.personal?.summary);
     setTextBind("personal.careerSummary", data.personal?.careerSummary);
     setTextBind("personal.bio", data.personal?.bio);
     setTextBind("personal.philosophy", data.personal?.philosophy);
@@ -376,23 +354,7 @@ ${name}
     renderList("#marketableSkillsList", data.personal?.marketableSkills, (s) => `${s}`);
     renderList("#accomplishmentsList", data.personal?.accomplishments, (a) => `${a}`);
 
-    renderList("#volunteerList", data.professional?.volunteer, (v) =>
-      `<strong>${v.name}</strong> <span class="tiny muted">(${v.date})</span><br/>${v.details || ""}`
-    );
-
-    renderList("#lettersList", data.professional?.letters, (l) => {
-      const ok = safeLink(l.url);
-      const href = ok ? l.url : "#";
-      const target = ok ? ` target="_blank" rel="noopener noreferrer"` : "";
-      return `<strong>${l.name}</strong> — ${l.source} — <a href="${href}"${target}>Open</a>`;
-    });
-
-    renderList("#awardsProfessionalList", data.professional?.awards, (a) =>
-      `<strong>${a.name}</strong> <span class="tiny muted">(${a.date})</span> — ${a.details || ""}`
-    );
-
     renderAcademicSamples(data.academicSamples || []);
-    renderProfessionalSamples(data.professional?.samples || []);
 
     // Search + filter
     const search = $("#workSearch");
