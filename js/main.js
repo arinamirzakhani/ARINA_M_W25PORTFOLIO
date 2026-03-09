@@ -263,7 +263,7 @@ I would welcome the opportunity to discuss how my skills and motivation align wi
 
 Sincerely,
 ${name}
-[Phone] • [Email] • [Portfolio/GitHub/LinkedIn]`;
+(647) 809-6126 • arinamirzakhani02@gmail.com`;
   }
 
   // -----------------------------
