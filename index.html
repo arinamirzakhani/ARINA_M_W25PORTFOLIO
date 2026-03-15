@@ -9,7 +9,6 @@
   <link rel="icon" href="./assets/logo.png" type="image/png" />
   <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- ✅ Downloads section layout fix (safe even if you don’t edit styles.css) -->
   <style>
     .downloads-grid {
       display: grid;
@@ -67,6 +66,7 @@
           <li><a href="#credentials">Academic Credentials</a></li>
           <li><a href="#academic-work">Academic Work</a></li>
           <li><a href="#capstone">Capstone</a></li>
+          <li><a href="#references">References</a></li>
           <li><a href="#downloads">Downloads</a></li>
         </ul>
       </nav>
@@ -94,7 +94,6 @@
           <a class="btn ghost" href="#academic-work">See Work Samples</a>
         </div>
 
-        <!-- ✅ If you also don’t want these chips at the top, delete this whole meta-row block -->
         <div class="meta-row">
           <span class="meta-chip" id="portfolioLinkChip">Portfolio Link: <span data-bind="links.portfolioUrl">[add later]</span></span>
           <span class="meta-chip" id="videoLinkChip">Demo Video: <span data-bind="links.videoUrl">[add later]</span></span>
@@ -333,7 +332,60 @@
       </div>
     </section>
 
-    <!-- ✅ DOWNLOADS (IMPROVED LAYOUT) -->
+    <!-- REFERENCES / TESTIMONIALS -->
+    <section id="references" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>References / Testimonials</h2>
+        </header>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Reference Letter 1</h3>
+            <p class="muted">
+              <strong>Erik James</strong><br />
+              Professional Reference
+            </p>
+
+            <p class="muted">
+              This reference letter is included as supporting documentation and reflects professional feedback based on prior work experience.
+            </p>
+
+            <div class="actions">
+              <a class="btn small primary" href="./assets/Arina_Mirzakhani_Reference_Erik_James_FINAL.pdf" target="_blank" rel="noopener">
+                Open Letter
+              </a>
+              <a class="btn small ghost" href="./assets/Arina_Mirzakhani_Reference_Erik_James_FINAL.pdf" download>
+                Download PDF
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Reference Letter 2</h3>
+            <p class="muted">
+              <strong>Sayed Amir</strong><br />
+              Professional Reference
+            </p>
+
+            <p class="muted">
+              This second reference letter provides additional professional support for my reliability, teamwork, and work ethic.
+            </p>
+
+            <div class="actions">
+              <a class="btn small primary" href="./assets/Arina_Mirzakhani_Reference_Sayed_Amir_Available_Upon_Request_FINAL.pdf" target="_blank" rel="noopener">
+                Open Letter
+              </a>
+              <a class="btn small ghost" href="./assets/Arina_Mirzakhani_Reference_Sayed_Amir_Available_Upon_Request_FINAL.pdf" download>
+                Download PDF
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOADS -->
     <section id="downloads" class="section alt">
       <div class="container">
         <header class="section-header">
@@ -410,7 +462,7 @@
       ]
     },
     "links": {
-        "portfolioUrl": "https://arina-m-w25-portfolio.vercel.app/",
+      "portfolioUrl": "https://arina-m-w25-portfolio.vercel.app/",
       "videoUrl": "[add demo video link later]",
       "expiryDate": "No expiry (available past Apr 30, 2025)",
       "github": "https://github.com/arinamirzakhani",
@@ -423,12 +475,12 @@
         { "name": "Computer Programming & Analysis (Diploma)", "school": "George Brown College", "date": "2023–2026" }
       ],
       "awards": [
-  { "name": "Dean's List", "date": "Fall 2023", "details": "George Brown College — Dean’s Honour List" },
-  { "name": "Dean's List", "date": "Winter 2024", "details": "George Brown College — Dean’s Honour List" },
-  { "name": "Dean's List", "date": "Fall 2024", "details": "George Brown College — Dean’s Honour List" },
-  { "name": "Dean's List", "date": "Winter 2025", "details": "George Brown College — Dean’s Honour List" },
-  { "name": "Dean's List", "date": "Fall 2025", "details": "George Brown College — Dean’s Honour List" }
-]
+        { "name": "Dean's List", "date": "Fall 2023", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Winter 2024", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Fall 2024", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Winter 2025", "details": "George Brown College — Dean’s Honour List" },
+        { "name": "Dean's List", "date": "Fall 2025", "details": "George Brown College — Dean’s Honour List" }
+      ]
     },
     "highlights": [
       { "title": "Full-Stack Development", "subtitle": "Node/Express • MongoDB • GraphQL" },
