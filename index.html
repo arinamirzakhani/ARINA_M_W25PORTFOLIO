@@ -255,11 +255,17 @@
 
           <article class="card">
             <h3>Academic Record / Transcript</h3>
-            <p class="muted">View my academic transcript below.</p>
+            <p class="muted">View my academic files below.</p>
 
             <div class="actions">
               <a class="btn small ghost" href="./assets/Transcript.pdf" data-bind-href="academic.transcriptFile" target="_blank" rel="noopener">
                 Open Transcript
+              </a>
+              <a class="btn small ghost" href="./assets/Diploma.pdf" data-bind-href="academic.ssdDiplomaFile" target="_blank" rel="noopener">
+                Open Diploma
+              </a>
+              <a class="btn small ghost" href="./assets/Transcript - Arina Mirzakhani.PDF" data-bind-href="academic.ssdTranscriptFile" target="_blank" rel="noopener">
+                Open SSD Transcript
               </a>
             </div>
           </article>
@@ -471,6 +477,8 @@
     "academic": {
       "transcriptNote": "View my academic transcript below.",
       "transcriptFile": "./assets/Transcript.pdf",
+      "ssdDiplomaFile": "./assets/Diploma.pdf",
+      "ssdTranscriptFile": "./assets/Transcript - Arina Mirzakhani.PDF",
       "credentials": [
         { "name": "Computer Programming & Analysis (Diploma)", "school": "George Brown College", "date": "2023–2026" }
       ],
